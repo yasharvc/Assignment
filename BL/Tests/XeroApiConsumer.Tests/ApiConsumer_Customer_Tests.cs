@@ -1,14 +1,17 @@
 using NUnit.Framework;
 using System;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Tests
 {
-    public class ApiConsumerTests
-    {
-        [SetUp]
+    public class ApiConsumer_Customer_Tests
+	{
+		XeroApiConsumer.Connection.ApiConsumer ApiConsumer { get; set; }
+		[SetUp]
         public void Setup()
         {
+			ApiConsumer = new XeroApiConsumer.Connection.ApiConsumer();
         }
 
         [Test]
@@ -28,5 +31,22 @@ namespace Tests
 
             //There is no way to remove created customer
         }
+
+		[Test]
+		public void Create_Empty_Customer_invalid()
+		{
+			var expected = new Xero.Api.Core.Model.Contact();
+			var apiConsumer = new XeroApiConsumer.Connection.ApiConsumer();
+
+			Assert.ThrowsAsync<Xero.Api.Infrastructure.Exceptions.ValidationException>(() => apiConsumer.CreateCustomerAsync(expected));
+		}
+
+		[Test]
+		public async Task Get_All_Contacts_valid()
+		{
+			var lst = await ApiConsumer.GetAllContactsAsync();
+
+			Assert.IsTrue(lst.Count() > 0);
+		}
     }
 }
