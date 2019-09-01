@@ -13,6 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{DD2D9111
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnetify_react_template", "dotnetify-react-demo-vs2017\ReactTemplate\content\dotnetify_react_template.csproj", "{40CDA0E6-AED5-47C4-AA61-6B8022E93574}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModels", "BL\DataModels\DataModels.csproj", "{5E454161-ED26-4AC3-8E7C-520C50939413}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xero.Api", "Xero-NetStandard\Xero.Api\Xero.Api.csproj", "{D653DF4F-BCE4-49C1-AF22-905FD1928A1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,14 @@ Global
 		{40CDA0E6-AED5-47C4-AA61-6B8022E93574}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40CDA0E6-AED5-47C4-AA61-6B8022E93574}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40CDA0E6-AED5-47C4-AA61-6B8022E93574}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E454161-ED26-4AC3-8E7C-520C50939413}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E454161-ED26-4AC3-8E7C-520C50939413}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E454161-ED26-4AC3-8E7C-520C50939413}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E454161-ED26-4AC3-8E7C-520C50939413}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D653DF4F-BCE4-49C1-AF22-905FD1928A1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D653DF4F-BCE4-49C1-AF22-905FD1928A1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D653DF4F-BCE4-49C1-AF22-905FD1928A1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D653DF4F-BCE4-49C1-AF22-905FD1928A1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -40,6 +52,8 @@ Global
 		{57480D07-0DD6-4008-A4C1-BABE7A132580} = {DD2D9111-4EFE-4AFB-8080-DBE4A244CC6F}
 		{DD2D9111-4EFE-4AFB-8080-DBE4A244CC6F} = {ED174CAA-9B1F-4A4E-A917-A16DE3B45173}
 		{40CDA0E6-AED5-47C4-AA61-6B8022E93574} = {ED174CAA-9B1F-4A4E-A917-A16DE3B45173}
+		{5E454161-ED26-4AC3-8E7C-520C50939413} = {ED174CAA-9B1F-4A4E-A917-A16DE3B45173}
+		{D653DF4F-BCE4-49C1-AF22-905FD1928A1E} = {ED174CAA-9B1F-4A4E-A917-A16DE3B45173}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B0E32B5C-7F1C-4955-9AB1-34834E161E51}
