@@ -2,7 +2,7 @@ using NUnit.Framework;
 
 namespace Tests
 {
-    public class Tests
+    public class ApiConnectorTests
     {
         [SetUp]
         public void Setup()
@@ -10,9 +10,6 @@ namespace Tests
         }
 
         [Test]
-        public void Test1()
-        {
-            Assert.Pass();
-        }
+        public void Connection_is_ok_valid() => new XeroApiConsumer.Connection.ApiConnector();
     }
 }
